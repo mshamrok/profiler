@@ -1,10 +1,8 @@
-.cardholder{
-
-     
+.cardholder{ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    transition: 2s;
 }
 
 .badge{
@@ -17,7 +15,15 @@
      height: 350px;
      border-radius: 5px;
      padding-left: 20px;
-     overflow: hidden;
+    overflow: hidden;
+     margin: 5px;
+     transition: 0.5s;
+     cursor: pointer;
+    
+}
+
+.badge:hover{
+     background-color: rgb(143, 180, 234);
 }
 .badge img{
      position: absolute;
@@ -36,11 +42,22 @@
 
 .badge h6:nth-of-type(1) {
     color: brown;
-    transform: translateY(-65px);
+    transform: translateY(-25px);
      
 }
 .badge h6:nth-of-type(2) {
      color: brown;
-     transform: translateY(-30px);
+     transform: translateY(5px);
+      
+ }
+ .badge h6:nth-of-type(3) {
+     color: rgb(59, 99, 209);
+     transform: translateY(25px);
+      
+ }
+  .badge h6:nth-of-type(4) {
+     color: rgb(20, 201, 180);
+     transform: translateY(50px);
+     white-space: initial;
       
  }
